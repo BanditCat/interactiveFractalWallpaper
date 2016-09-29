@@ -1,0 +1,96 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/lib/science.jondubois.lnzlib">
+    <science.jondubois.lnzlib.LnzSlider
+        android:key="speed"
+        android:title="@string/speed"
+        android:summary="@string/speedDescription"
+        android:defaultValue="@integer/defaultSpeed"
+        android:text="%"
+        custom:min="@integer/speedMin"
+        android:max="@integer/speedMax"
+        />
+
+    <science.jondubois.lnzlib.LnzSlider
+        android:key="dimmer"
+        android:title="@string/dimmer"
+        android:summary="@string/dimmerDescription"
+        android:defaultValue="@integer/defaultDimmer"
+        android:text="%"
+        custom:min="@integer/dimmerMin"
+        android:max="@integer/dimmerMax"
+        />
+
+    <ListPreference
+        android:key="palette"
+        android:title="@string/palette"
+        android:summary="@string/paletteDescription"
+        android:defaultValue="0"
+        android:entries="@array/palettes"
+        android:entryValues="@array/palettesList"
+        />
+
+    <CheckBoxPreference
+        android:key="interaction"
+        android:title="@string/interaction"
+        android:summary="@string/interactionDescription"
+        android:defaultValue="@bool/defaultInteraction"/>
+
+
+    <PreferenceCategory
+    android:title="@string/renderPreferences">
+
+        <science.jondubois.lnzlib.LnzSlider
+            android:key="iterations"
+            android:title="@string/iterations"
+            android:summary="@string/iterationsDescription"
+            android:defaultValue="@integer/defaultIterations"
+            custom:min="@integer/iterationsMin"
+            android:max="@integer/iterationsMax"
+            />
+
+        <CheckBoxPreference
+            android:key="msaa"
+            android:title="@string/msaa"
+            android:summary="@string/msaaDescription"
+            android:defaultValue="@bool/defaultMsaa"/>
+
+
+
+        <CheckBoxPreference
+            android:key="highp"
+            android:title="@string/highp"
+            android:summary="@string/highpDescription"
+            android:defaultValue="@bool/defaultHighp"/>
+
+        <CheckBoxPreference
+            android:key="rtt"
+            android:title="@string/rtt"
+            android:summary="@string/rttDescription"
+            android:defaultValue="@bool/defaultRtt"/>
+
+
+
+
+        <science.jondubois.lnzlib.LnzSlider
+            android:key="pixelSize"
+            android:title="@string/pixelSize"
+            android:summary="@string/pixelSizeDescription"
+            android:defaultValue="@integer/defaultPixelSize"
+            custom:min="@integer/pixelSizeMin"
+            android:max="@integer/pixelSizeMax"
+            android:text="@string/pixelSizeSuffix"
+            android:dependency="rtt"
+            android:layout="?android:attr/preferenceLayoutChild"/>
+
+
+        <CheckBoxPreference
+            android:key="skipping"
+            android:title="@string/skipping"
+            android:summary="@string/skippingDescription"
+            android:defaultValue="@bool/defaultSkipping"
+            android:dependency="rtt"
+            android:layout="?android:attr/preferenceLayoutChild"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

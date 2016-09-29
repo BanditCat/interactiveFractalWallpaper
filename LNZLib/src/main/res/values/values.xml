@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LNZ</string>
+    <string name="demo_name">LNZ Demo</string>
+    <string name="buy">Buy full version</string>
+    <string name="lnz_wp_desc">A live wallpaper displaying animated Pickover stalks</string>
+    <string name="change_wallpaper">Change Wallpaper</string>
+    <string name="no_es2">This is an unsupported device! OpenGL ES 2.0 support is mandatory.</string>
+    <string name="settings">Settings</string>
+    <string name="close">Close</string>
+    <string name="done">Done</string>
+
+    <string name="renderPreferences">Rendering preferences</string>
+
+    <string name="speed">Speed</string>
+    <string name="speedDescription">The overall speed of animation</string>
+    <integer name="speedMax">1000</integer>
+    <integer name="defaultSpeed">100</integer>
+    <integer name="speedMin">10</integer>
+
+    <string name="dimmer">Dimmer</string>
+    <string name="dimmerDescription">Control the brightness of the image</string>
+    <integer name="dimmerMax">100</integer>
+    <integer name="defaultDimmer">100</integer>
+    <integer name="dimmerMin">10</integer>
+
+    <string name="rtt">RTT</string>
+    <string name="rttDescription">Render to texture is required for several other options</string>
+    <bool name="defaultRtt">true</bool>
+
+    <string name="interaction">Interactivity</string>
+    <string name="interactionDescription">Use this setting to enable or disable touch interactions</string>
+    <bool name="defaultInteraction">true</bool>
+
+    <string name="msaa">MSAA</string>
+    <string name="msaaDescription">Multisample antialiasing increases image quality, but uses the battery</string>
+    <bool name="defaultMsaa">false</bool>
+
+    <string name="pixelSize">Pixel size</string>
+    <string name="pixelSizeDescription">Control the size of pixels on the screen, a higher value conserves the battery</string>
+    <string name="pixelSizeSuffix">&#160;pixels per texel</string>
+    <integer name="pixelSizeMax">10</integer>
+    <integer name="defaultPixelSize">2</integer>
+    <integer name="pixelSizeMin">1</integer>
+
+    <string name="iterations">Iterations</string>
+    <string name="iterationsDescription">Control the detail level of the fractal, a lower value conserves the battery</string>
+    <integer name="iterationsMax">32</integer>
+    <integer name="defaultIterations">8</integer>
+    <integer name="iterationsMin">4</integer>
+
+    <string name="palette">Palette</string>
+    <string name="paletteDescription">Select which color palette to use</string>
+    <string name="defaultPalette">0</string>
+    <string-array name="palettes">
+        <item>Mono Lisa</item>
+        <item>Spectrum</item>
+        <item>Monochrome</item>
+        <item>Mint</item>
+    </string-array>
+    <string-array name="palettesList">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="highp">High precision</string>
+    <string name="highpDescription">Select whether or not to use high precision floats, checking this box uses the battery more</string>
+    <bool name="defaultHighp">false</bool>
+
+    <string name="skipping">Frame skipping</string>
+    <string name="skippingDescription">A battery saving feature</string>
+    <bool name="defaultSkipping">true</bool>
+
+</resources>

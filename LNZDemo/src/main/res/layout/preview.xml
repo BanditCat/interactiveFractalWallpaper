@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/lnzPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <FrameLayout
+            android:id="@+id/lnzSettings"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10000"
+            android:background="#7000"
+            android:color="#FFFF">
+        </FrameLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buyButton"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:onClick="onBuy"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="@string/buy"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="1sp"
+                android:background="#cc333333"
+                android:textSize="25sp">
+            </Button>
+        </LinearLayout>>
+    </LinearLayout>
+
+</RelativeLayout>
